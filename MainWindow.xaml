@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="DarkOrange">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="175" Margin="125,85,0,0" TextWrapping="Wrap" Text="sixseven" VerticalAlignment="Top" Width="320" TextChanged="TextBox_TextChanged" FontSize="72"/>
+        <TextBox HorizontalAlignment="Left" Height="175" Margin="125,85,0,0" TextWrapping="Wrap" Text="sixseven" VerticalAlignment="Top" Width="320" TextChanged="TextBox_TextChanged" FontSize="72" SelectionOpacity="2" FontWeight="Bold" Foreground="Red" SelectionTextBrush="DarkOrange" Background="DarkOrange"/>
 
     </Grid>
 </Window>
