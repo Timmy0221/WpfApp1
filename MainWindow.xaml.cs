@@ -38,5 +38,15 @@ namespace WpfApp1
             string message = $"Name: {name}\nTelphone: {telphone}";
             MessageBox.Show(message, "我的資訊", MessageBoxButton.OK);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void computeButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
