@@ -5,9 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="DarkOrange">
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Height="175" Margin="126,85,0,0" TextWrapping="Wrap" Text="sixseven!!!" VerticalAlignment="Top" Width="320" TextChanged="TextBox_TextChanged" FontSize="72" SelectionOpacity="2" FontWeight="Bold" Foreground="Red" SelectionTextBrush="DarkOrange" Background="DarkOrange"/>
+        Title="MainWindow" Height="450" Width="800" Background="White">
+    <Grid OpacityMask="White">
+        <TextBox HorizontalAlignment="Left" Height="66" Margin="0,1,0,0" TextWrapping="Wrap" Text="sixseven!!!" VerticalAlignment="Top" Width="297" TextChanged="TextBox_TextChanged" FontSize="48" SelectionOpacity="2" FontWeight="Bold" Foreground="Red" SelectionTextBrush="DarkOrange" Background="White" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.052"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="姓名" HorizontalAlignment="Left" Height="34" Margin="-4,82,0,0" VerticalAlignment="Top" Width="56" FontSize="20" RenderTransformOrigin="0.464,0.875"/>
+        <TextBox x:Name="nametextbox" HorizontalAlignment="Left" Height="40" Margin="52,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.5,0.5" FontSize="20" TextChanged="TextBox_TextChanged_1" >
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="電話" HorizontalAlignment="Left" Height="34" Margin="-2,133,0,0" VerticalAlignment="Top" Width="54" FontSize="20" RenderTransformOrigin="0.361,0.566"/>
+        <TextBox x:Name="telNameTextBox" HorizontalAlignment="Left" Height="37" Margin="52,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.5,0.5" FontSize="20" TextChanged="TextBox_TextChanged_1">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="ok_button" Content="確認" HorizontalAlignment="Left" Height="43" Margin="323,105,0,0" VerticalAlignment="Top" Width="85" FontSize="22" FontWeight="Bold" Click="ok_button_Click"/>
 
     </Grid>
 </Window>

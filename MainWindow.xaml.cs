@@ -25,5 +25,18 @@ namespace WpfApp1
         {
 
         }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ok_button_Click(object sender, RoutedEventArgs e)
+        {
+            string name = nametextbox.Text;
+            string telphone = telNameTextBox.Text;
+            string message = $"Name: {name}\nTelphone: {telphone}";
+            MessageBox.Show(message, "我的資訊", MessageBoxButton.OK);
+        }
     }
 }
