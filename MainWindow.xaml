@@ -19,7 +19,7 @@
 			<RowDefinition Height="66*"/>
 			<RowDefinition Height="79*"/>
 		</Grid.RowDefinitions>
-		<TextBox HorizontalAlignment="Left" Height="66" Margin="0,1,0,0" TextWrapping="Wrap" Text="sixseven!!!" VerticalAlignment="Top" Width="297" TextChanged="TextBox_TextChanged" FontSize="48" SelectionOpacity="2" FontWeight="Bold" Foreground="Red" SelectionTextBrush="DarkOrange" Background="#FFFFCC98" RenderTransformOrigin="0.5,0.5">
+		<TextBox HorizontalAlignment="Left" Height="66" Margin="1,3,0,0" TextWrapping="Wrap" Text="sixseven!!!" VerticalAlignment="Top" Width="297" TextChanged="TextBox_TextChanged" FontSize="48" SelectionOpacity="2" FontWeight="Bold" Foreground="Red" SelectionTextBrush="DarkOrange" Background="#FFFFCC98" RenderTransformOrigin="0.5,0.5">
 			<TextBox.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -51,10 +51,10 @@
 				</TransformGroup>
 			</TextBox.RenderTransform>
 		</TextBox>
-		<Button x:Name="ok_button" Content="確認" HorizontalAlignment="Left" Height="43" Margin="323,105,0,0" VerticalAlignment="Top" Width="85" FontSize="22" FontWeight="Bold" Click="ok_button_Click"/>
+		<Button x:Name="ok_button" Content="確認" HorizontalAlignment="Left" Height="43" Margin="317,110,0,0" VerticalAlignment="Top" Width="85" FontSize="22" FontWeight="Bold" Click="ok_button_Click"/>
 		<Label Content="Label" HorizontalAlignment="Left" Height="0" Margin="59,32,0,0" VerticalAlignment="Top" Width="10" Grid.Row="1"/>
 		<Label Content="輸入一個數值" HorizontalAlignment="Left" Height="34" Margin="-2,6,0,0" VerticalAlignment="Top" Width="131" FontSize="20" RenderTransformOrigin="0.361,0.566" Grid.Row="1"/>
-		<TextBox x:Name="telNameTextBox複製__C_" HorizontalAlignment="Left" Height="37" Margin="129,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.5,0.5" FontSize="20" TextChanged="TextBox_TextChanged_1" Grid.Row="1">
+		<TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Height="37" Margin="129,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.5,0.5" FontSize="20" TextChanged="TextBox_TextChanged_1" Grid.Row="1">
 			<TextBox.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -64,8 +64,8 @@
 				</TransformGroup>
 			</TextBox.RenderTransform>
 		</TextBox>
-		<Button Content="顯示N*N乘法表" HorizontalAlignment="Left" Height="40" Margin="395,9,0,0" Grid.Row="1" VerticalAlignment="Top" Width="168" Click="computeButton_Click" FontSize="22" FontWeight="Bold"/>
-		<TextBlock x:Name="resultTextBlock" HorizontalAlignment="Left" Margin="7,56,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="164" Width="775" FontSize="18" Background="#FFBAD4FF"/>
+		<Button x:Name="computeButton" Content="顯示N*N乘法表" HorizontalAlignment="Left" Height="40" Margin="419,9,0,0" Grid.Row="1" VerticalAlignment="Top" Width="168" Click="computeButton_Click" FontSize="22" FontWeight="Bold"/>
+		<TextBlock x:Name="resultTextBlock" HorizontalAlignment="Center" Margin="0,49,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="189" Width="806" FontSize="18" Background="#FFBAD4FF"><Run/><LineBreak/><Run/></TextBlock>
 
 	</Grid>
 </Window>

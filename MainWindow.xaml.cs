@@ -46,7 +46,27 @@ namespace WpfApp1
 
         private void computeButton_Click(object sender, RoutedEventArgs e)
         {
+            int n = int.Parse(numberTextBox.Text);
 
+            var sb = new StringBuilder();
+
+            // 根據 n 與 n*n 的位數，對齊被乘數與乘積（配合等寬字型顯示）
+            int operandWidth = n.ToString().Length;
+            int productWidth = (n * n).ToString().Length;
+
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    string left = i.ToString().PadLeft(operandWidth) + "*" + j.ToString().PadLeft(operandWidth) + "=";
+                    string prod = (i * j).ToString().PadLeft(productWidth);
+                    sb.Append(left + prod + " ");
+                }
+                sb.AppendLine();
+            }
+
+
+            resultTextBlock.Text = sb.ToString();
         }
     }
 }
